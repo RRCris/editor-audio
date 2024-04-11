@@ -1,0 +1,123 @@
+.container{
+   border-radius: 0px 0px 18px 18px;
+   background: #FFF;
+   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+   padding: 6px 10px;
+   display: flex;
+   flex-direction: row;
+   align-items: start;
+   justify-content: center;
+   gap: 9px;
+   color:#B5B5B5;
+   position: relative;
+}
+
+.slide{
+   width: 200px;
+   height: 3px;
+   background-color:#B5B5B5 ;
+   position: relative;
+}
+.slide__active{
+   height: 3px;
+   background-color:#5E00A0 ;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+.slide__dot{
+   pointer-events: none;
+   width: 15px;
+   height: 15px;
+   border-radius: 50%;
+   background-color: transparent;
+   border: 3px solid #5E00A0;
+
+   position:absolute;
+   top:0;
+   transform: translate(-50%,-40%);
+}
+
+.quantity{
+   text-align: center;
+   border: 1px solid #000;
+   border-radius: 4px;
+   outline: none;
+   max-width: 40px;
+   color:#B5B5B5;
+   transition: color .5s;
+}
+.quantity:focus{
+   color:black
+}
+.quantity__error{
+   border: 1px solid red;
+   animation: .4s quantity__error ease-out ;
+}
+
+.name{
+   
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+   user-select: none;
+}
+
+.container__slide{
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   justify-content: start;
+   gap: 5px;
+}
+
+.container__icon:hover{
+   animation: 1s hover__icon;
+   color:#000
+}
+
+.message{
+   position: absolute;
+   bottom: -10px;
+   left: 0;
+   right: 0;
+   background-color: #F77;
+   font-size: 13px;
+   text-align: center;
+   color:#FFF;
+   animation: .3s in_message cubic-bezier(.17,.67,.53,1.52);
+}
+
+@keyframes in_message{
+   from{
+      opacity: 0;
+      transform: translateY(15px);
+   }
+   to{
+      opacity: 1;
+      transform: translateY(0px);
+   }
+}
+@keyframes hover__icon{
+   from{
+      transform: rotate(0deg);
+   }
+   to{
+      transform: rotate(-360deg);
+   }
+}
+@keyframes quantity__error{
+   0%{
+      transform: translateX(0px);
+   }
+   25%{
+      transform: translateX(-5px);
+   }
+   75%{
+      transform: translateX(5px);
+   }
+   100%{
+      transform: translateX(0px);
+   }
+}

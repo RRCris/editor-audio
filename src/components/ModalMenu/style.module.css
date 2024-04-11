@@ -1,0 +1,48 @@
+.background{
+   position: fixed;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   z-index: 10;
+   background-color: #FFF7;
+   animation: inBlur 1s forwards;
+}
+
+@keyframes inBlur {
+   from{
+      background-color: transparent;
+      backdrop-filter: blur(0px);
+   }
+   to{
+      background-color: #FFF7;
+      backdrop-filter: blur(7px);
+   }
+}
+
+.container__menu{
+   padding: 20px;
+   background-color:#FFF;
+   border-top-right-radius: 20px;
+   border-top-left-radius: 20px;
+   box-shadow: 0px -1px 16px 0px rgba(0,0,0,0.75);
+   -webkit-box-shadow: 0px -1px 16px 0px rgba(0,0,0,0.75);
+   -moz-box-shadow: 0px -1px 16px 0px rgba(0,0,0,0.75);
+   min-width: 300px;
+   
+
+   position: fixed;
+   bottom:0;
+   left: 0;
+   right: 0;
+   z-index: 12;
+}
+
+.container_standart{
+position: fixed;
+   
+   left: 0;
+   right: 0;
+   z-index: 12;
+}
+

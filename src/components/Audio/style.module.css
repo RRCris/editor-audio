@@ -1,0 +1,76 @@
+.container {
+	padding-bottom: 30px;
+}
+
+.option {
+	cursor: pointer;
+	border-top-left-radius: 18px;
+	border-top-right-radius: 18px;
+	height: 30px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+	font-size: 20px;
+	font-weight: 600;
+
+	transition: filter 0.3s, transform 0.3s;
+}
+
+.option:hover {
+	filter: brightness(1.1);
+}
+
+.option:active {
+	transform: scale(0.9);
+}
+
+.line_mid {
+	height: 2px;
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.bar_indicador {
+	width: 10px;
+	height: 100%;
+	background: rgb(186, 184, 184);
+	background: linear-gradient(
+		90deg,
+		rgba(186, 184, 184, 1) 0%,
+		rgba(255, 255, 255, 1) 100%
+	);
+	border: 1px solid #000;
+	border-radius: 10px;
+	transform: translateX(-50%);
+}
+
+.container button {
+	cursor: pointer;
+	background-color: var(--editor-primary);
+	color: var(--editor-back);
+	padding: 5px;
+	border: none;
+	border-radius: 10px;
+	font-size: 17px;
+	width: 100%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	transition: filter 0.3s, transform 0.3s;
+}
+
+.container button:hover {
+	filter: brightness(1.1);
+	transform: scale(1.05);
+}
+
+.container button:active {
+	transform: scale(0.9);
+}

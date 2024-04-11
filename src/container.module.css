@@ -1,0 +1,41 @@
+.container {
+	display: flex;
+	align-items: stretch;
+	justify-content: start;
+	gap: 10px;
+	background: radial-gradient(
+		circle,
+		rgba(164, 76, 240, 0.07046568627450978) 0%,
+		rgba(0, 0, 0, 0) 100%
+	);
+	margin: 0 auto;
+}
+.container_editor {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
+	width: 90vw;
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.container__modal {
+	width: 370px;
+	overflow: auto;
+	background: var(--editor-back, red);
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: end;
+}
+
+.banner_empty_modal {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	color: var(--editor-inactive);
+}

@@ -1,0 +1,10 @@
+:root {
+  --editor-primary: #5e00a0;
+  --editor-back: #f9f9f9;
+  --editor-inactive: #8c8c8c;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}

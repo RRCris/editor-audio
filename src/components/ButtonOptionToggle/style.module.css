@@ -1,0 +1,80 @@
+.container {
+	background-color: #fbfbfb;
+	color: #989898;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 18px;
+	padding: 13px;
+	cursor: pointer;
+
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+
+	background-image: linear-gradient(
+		to right,
+		#aca8a8 50%,
+		rgba(255, 255, 255, 0) 0%
+	);
+	background-position: bottom;
+	background-size: 20px 1px;
+	background-repeat: repeat-x;
+
+	transition: color 0.5s, background-color 0.5s;
+}
+.container * {
+	transition: transform 0.3s;
+}
+.container:hover {
+	color: #5e00a0;
+	background: #f4f1f1;
+	background-image: linear-gradient(
+		to right,
+		#5e00a0 50%,
+		rgba(255, 255, 255, 0) 0%
+	);
+	background-position: bottom;
+	background-size: 20px 1px;
+	background-repeat: repeat-x;
+}
+
+.container:active * {
+	transform: scale(0.8);
+	user-select: none;
+}
+
+.toggle {
+	background-color: #e4e4e4;
+	width: 30px;
+	height: 15px;
+	border-radius: 7px;
+	position: relative;
+	box-shadow: 0px 4px 10px #0004;
+}
+
+.toggle_off::before {
+	content: "";
+	width: 15px;
+	height: 15px;
+	border-radius: 7px;
+	background-color: var(--editor-inactive);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.toggle_on {
+	background-color: var(--editor-primary);
+}
+.toggle_on::before {
+	content: "";
+	width: 15px;
+	height: 15px;
+	border-radius: 7px;
+	background-color: #e4e4e4;
+	position: absolute;
+	top: 0;
+	right: 0;
+}

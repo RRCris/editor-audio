@@ -1,0 +1,51 @@
+.container_InfoTabs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  position: relative;
+  width: fit-content;
+}
+
+.container_Tabs {
+  background-color: var(--editor-back);
+}
+
+.pestania_container {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-left: -5px;
+  padding: 10px;
+
+  cursor: pointer;
+
+  transition: color 0.3s, background-color 0.3s;
+}
+.pestania_container:hover {
+  color: var(--editor-inactive);
+  background-color: var(--editor-back);
+}
+.pestania_inactive {
+  background-color: var(--editor-inactive, #777);
+  color: var(--editor-back, #ddd);
+}
+.pestania_active {
+  background-color: var(--editor-back, #777);
+  color: var(--editor-primary, #50a);
+  position: relative;
+}
+
+.bar_tab {
+  height: 4px;
+  background-color: var(--editor-primary);
+  position: absolute;
+  bottom: 0;
+  transition: left 0.2s ease-in;
+}

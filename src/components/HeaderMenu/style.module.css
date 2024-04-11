@@ -1,0 +1,18 @@
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--editor-inactive);
+	font-size: 30px;
+
+	padding: 0 10px;
+
+	background-image: linear-gradient(
+		to right,
+		#000 50%,
+		rgba(255, 255, 255, 0) 0%
+	);
+	background-position: bottom;
+	background-size: 20px 3px;
+	background-repeat: repeat-x;
+}

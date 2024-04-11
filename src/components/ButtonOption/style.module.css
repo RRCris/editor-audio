@@ -1,0 +1,41 @@
+.container{
+   background-color: #FBFBFB;
+   color: #989898;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap:18px;
+   padding: 13px;
+   cursor: pointer;
+
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+
+
+   background-image: linear-gradient(to right, #ACA8A8 50%, rgba(255,255,255,0) 0%);
+   background-position: bottom;
+   background-size: 20px 1px;
+   background-repeat: repeat-x;
+
+   transition: color .5s, background-color .5s;
+}
+.container *{
+   transition:transform .3s ;
+}
+.container:hover{
+   color:#5E00A0;
+   background:#F4F1F1;
+   background-image: linear-gradient(to right, #5E00A0 50%, rgba(255,255,255,0) 0%);
+   background-position: bottom;
+   background-size: 20px 1px;
+   background-repeat: repeat-x;
+}
+
+.container:active *{
+   transform: scale(.8) ;
+   user-select: none;
+   
+}
+

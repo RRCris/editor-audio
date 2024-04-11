@@ -1,0 +1,49 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 91px;
+  height: 91px;
+  background-color: #d2d2d2;
+  border-radius: 9px;
+  color: var(--editor-primary);
+  cursor: pointer;
+
+  transition: box-shadow 0.5s;
+}
+
+.container:hover {
+  box-shadow: 0 0 15px var(--editor-primary);
+}
+
+.container_hover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #0003;
+  color: var(--editor-back);
+  backdrop-filter: blur(2px);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.titulo {
+  position: absolute;
+  color: #000;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  top: 5px;
+}
+
+.container_controls {
+  display: flex;
+  justify-content: center;
+}
